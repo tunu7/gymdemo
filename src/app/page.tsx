@@ -67,21 +67,21 @@ export default function Home() {
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <p className="text-gray-700 italic">
-              This gym changed my life! The trainers are amazing, and I finally achieved my dream body!&quot;
+              This gym changed my life! The trainers are amazing, and I finally achieved my dream body&apos;s results!
             </p>
             <h3 className="mt-4 font-semibold text-blue-600">- Alex R.</h3>
           </div>
 
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <p className="text-gray-700 italic">
-             The group workouts keep me motivated. I love the energy and support from everyone!&quot;
+              The group workouts keep me motivated. I love the energy and support from everyone!
             </p>
             <h3 className="mt-4 font-semibold text-blue-600">- Sarah M.</h3>
           </div>
 
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <p className="text-gray-700 italic">
-              Excellent nutrition guidance! The diet plan really helped me lose weight effectively.&quot;
+              Excellent nutrition guidance! The diet plan really helped me lose weight effectively!
             </p>
             <h3 className="mt-4 font-semibold text-blue-600">- John D.</h3>
           </div>
