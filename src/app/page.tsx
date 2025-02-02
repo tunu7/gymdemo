@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // 1. Import Next.js Image component
 
 interface FeatureCardProps {
   title: string;
@@ -31,7 +32,14 @@ const TrainerSection: React.FC = () => (
     <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
       {trainers.map((trainer, index) => (
         <div key={index} className="p-6 bg-white shadow-md rounded-lg text-center">
-          <img src={trainer.photo} alt={trainer.name} className="w-32 h-32 mx-auto rounded-full object-cover" />
+          {/* 2. Replaced img with Image component */}
+          <Image 
+            src={trainer.photo} 
+            alt={trainer.name} 
+            width={128} 
+            height={128}
+            className="w-32 h-32 mx-auto rounded-full object-cover"
+          />
           <h3 className="mt-4 text-2xl font-semibold text-blue-600">{trainer.name}</h3>
           <p className="mt-2 text-gray-700">{trainer.specialty}</p>
         </div>
@@ -52,7 +60,15 @@ const GallerySection: React.FC = () => (
     <p className="mt-4 text-lg text-gray-700">See the incredible progress our clients have made.</p>
     <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
       {galleryImages.map((image, index) => (
-        <img key={index} src={image} alt="Transformation" className="w-full rounded-lg shadow-md" />
+        // 3. Replaced img with Image component
+        <Image 
+          key={index} 
+          src={image} 
+          alt="Transformation" 
+          width={300}
+          height={300}
+          className="w-full rounded-lg shadow-md"
+        />
       ))}
     </div>
   </div>
@@ -75,7 +91,8 @@ const ReviewSection: React.FC = () => (
     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
       {reviews.map((review, index) => (
         <div key={index} className="p-6 bg-white shadow-md rounded-lg text-center">
-          <p className="text-gray-700 italic">"{review.text}"</p>
+          {/* 4. Fixed unescaped quotes */}
+          <p className="text-gray-700 italic">&quot;{review.text}&quot;</p>
           <h3 className="mt-4 text-xl font-semibold text-blue-600">- {review.name}</h3>
         </div>
       ))}
@@ -92,7 +109,7 @@ export default function Home() {
           Elevate Your Fitness Journey
         </h1>
         <p className="mt-4 text-lg text-gray-700">
-          Train with top professionals, achieve your fitness goals, and transform your body with state-of-the-art facilities and expert guidance.
+          Train with top professionals, achieve your fitness goals, and transform your body with state of the art facilities and expert guidance.
         </p>
         <button className="mt-6 px-6 py-3 text-lg font-medium bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
           Join Now

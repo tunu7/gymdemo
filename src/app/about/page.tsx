@@ -7,7 +7,7 @@ export default function About() {
           At Modern Gym, we believe in a holistic approach to fitness. Our expert trainers, state-of-the-art equipment, and personalized programs ensure you reach your full potential.
         </p>
         <p className="mt-4 text-gray-600">
-          Whether you&apos;re a beginner or a seasoned athlete, we provide a welcoming and motivating environment to help you succeed.
+          Whether a beginner or a seasoned athlete, we provide a welcoming and motivating environment to help you succeed.
         </p>
       </div>
     </section>
