@@ -1,5 +1,6 @@
 export default function Home() {
   return (
+
     <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900 px-6">
       {/* Hero Section */}
       <div className="text-center max-w-3xl mt-10">
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="p-6 bg-white shadow-md rounded-lg text-center">
           <h2 className="text-2xl font-semibold text-blue-600">Personal Training</h2>
           <p className="mt-2 text-gray-700">
-            Work 1-on-1 with expert trainers to customize your fitness plan and reach your goals faster.
+            Work 1 on 1 with expert trainers to customize your fitness plan and reach your goals faster.
           </p>
         </div>
 
@@ -37,7 +38,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
     </section>
   );
 }
